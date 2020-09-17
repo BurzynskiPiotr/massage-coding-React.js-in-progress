@@ -21,18 +21,30 @@
   height: 100vh;
 }
 
-.main-panel {
+.starting-panel {
   width: 100%;
   text-align: center;
 }
 
-.main-panel form {
-  width: 100%;
+.starting-panel form {
+  width: 300px;
+  margin-left: calc(50% - 150px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.main-panel form input {
+.starting-panel form input {
   font-family: "Kumbh Sans", sans-serif;
-  width: 300px;
+  width: 100%;
   height: 30px;
   border: none;
   border-bottom: 1px solid #767676;
@@ -43,31 +55,112 @@
   outline: none;
 }
 
-.main-panel form input:hover {
-  width: 320px;
-}
-
-.main-panel form input:focus {
-  width: 340px;
-}
-
-.main-panel form button {
-  font-family: "Kumbh Sans", sans-serif;
+.starting-panel form button {
   font-size: 16px;
   font-family: "Kumbh Sans", sans-serif;
   background: none;
   outline: none;
   border: none;
   cursor: pointer;
-  padding: 3px 6px;
-  margin-top: 10px;
   margin: 10px auto;
 }
 
-.main-panel .welcoming-massage {
+.starting-panel .welcoming-message {
   font-size: 20px;
   margin-top: 20px;
   width: 100%;
   text-transform: uppercase;
+}
+
+.editing-panel {
+  width: 100%;
+  text-align: center;
+}
+
+.editing-panel .message {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.editing-panel .input-message {
+  text-align: center;
+  font-family: "Kumbh Sans", sans-serif;
+  width: 300px;
+  height: 30px;
+  border: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 18px;
+  text-align: center;
+  outline: none;
+}
+
+.editing-panel .editing-tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 40px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.editing-panel .editing-tools button {
+  font-size: 16px;
+  font-family: "Kumbh Sans", sans-serif;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: 10px 5px;
+  padding: 0 5px;
+  border-left: 1px solid black;
+}
+
+.editing-panel .hidden {
+  height: 0px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.editing-panel form {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.editing-panel form .code-selector {
+  width: 100%;
+}
+
+.editing-panel form .action-buttons {
+  height: 40px;
+}
+
+.editing-panel form .action-buttons button {
+  font-size: 16px;
+  font-family: "Kumbh Sans", sans-serif;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: 10px 5px;
 }
 /*# sourceMappingURL=stylesheet.css.map */
